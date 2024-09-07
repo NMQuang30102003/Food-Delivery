@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/FoodDelivery
+    username: root
+    password: admin123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+jwt:
+  privateKey: 4eRbR95PEEhugmrbEkSrfdRUBvi9+qRhTZi78710Znw=
+
+fileupload:
+  rootpath : F:\Spring_Boot\uploads
+
+redis:
+  host: localhost
+  port: 6380
