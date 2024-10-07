@@ -22,7 +22,7 @@ public class restaurant {
     private String address ;
     private Date open_date;
 
-    @OneToMany(mappedBy = "restaurant",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<rating_restaurant> ratingRestaurants = new ArrayList<>();
 }
