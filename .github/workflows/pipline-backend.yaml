@@ -1,7 +1,7 @@
 name: Backend Pbl6 pipelines
 on:
   push:
-    branchs:
+    branches:
       - main
     path:
       - 'docker-compose.yaml'
