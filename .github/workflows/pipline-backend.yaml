@@ -2,7 +2,7 @@ name: Backend Pbl6 pipelines
 on:
   push:
     branches:
-      - main
+      - master
     path:
       - 'docker-compose.yaml'
       - .github/workflows/*-backend.yaml
