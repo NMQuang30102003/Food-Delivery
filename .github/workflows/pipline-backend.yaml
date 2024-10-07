@@ -88,7 +88,9 @@ jobs:
           file: Dockerfile
           push: true
           platforms: linux/amd64
-          tag: ${{secrets.DOCKER_HUB_USERNAME}}/pbl6_backend:${{steps.extract_version.outputs.VERSION}},${{secrets.DOCKER_HUB_USERNAME}}/pbl6_backend:latest
+          tags: |
+            ${{secrets.DOCKER_HUB_USERNAME}}/pbl6_backend:${{steps.extract_version.outputs.VERSION}}
+            ${{secrets.DOCKER_HUB_USERNAME}}/pbl6_backend:latest
           build-args:
             PROFILE=dev
             APP_VERSION=${{steps.extract_version.outputs.VERSION}}
