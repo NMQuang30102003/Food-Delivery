@@ -22,7 +22,7 @@ jobs:
           distribution: 'corretto'
 
       - name: compile project
-        run: mvn clean complie
+        run: mvn clean compile
 
   unit-tests:
     runs-on: ubuntu-latest
